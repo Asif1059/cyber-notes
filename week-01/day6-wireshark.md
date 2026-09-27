@@ -18,7 +18,8 @@ I started by running:
 ping google.com
 ```
 
-!image.png
+<img width="1917" height="552" alt="image" src="https://github.com/user-attachments/assets/47fd9463-b891-4aea-89a6-049811e12ab3" />
+
 
 I then saw DNS traffic resolving:
 
@@ -37,7 +38,8 @@ AAAA  → IPv6 address
 
 I also saw an ARP request:
 
-!image.png
+<img width="1826" height="126" alt="image" src="https://github.com/user-attachments/assets/3aad1a98-ae9b-4b41-b461-0cec1ffd92b5" />
+
 
 ```
 Who has 10.0.2.2?
@@ -51,7 +53,8 @@ and the reply:
 
 Then I saw the ICMP traffic from the ping:
 
-!image.png
+<img width="1837" height="396" alt="image" src="https://github.com/user-attachments/assets/e1383ab0-341f-4208-8fdd-f8fbbd24fe4d" />
+
 
 ```
 10.0.2.15
@@ -71,7 +74,8 @@ After that, I opened:
 http://neverssl.com
 ```
 
-!image.png
+<img width="1837" height="396" alt="image" src="https://github.com/user-attachments/assets/4033bcb0-397c-406b-8c71-134cf154ee73" />
+
 
 I filtered for:
 
@@ -81,7 +85,8 @@ tcp.flags.syn==1
 
 and found the TCP SYN packet from my machine and the SYN-ACK reply from the NeverSSL:
 
-!image.png
+<img width="1916" height="778" alt="image" src="https://github.com/user-attachments/assets/49f5e702-3ed3-4696-b3de-4913656b9b8b" />
+
 
 ```
 SYN
@@ -97,7 +102,9 @@ http
 
 and found:
 
-!image.png
+<img width="1917" height="253" alt="image" src="https://github.com/user-attachments/assets/92402949-d213-4107-bdb9-8f1e4bd8b437" />
+
+
 
 ```
 GET /
@@ -111,7 +118,8 @@ HTTP/1.1 200 OK
 
 Finally, I opened the HTTP packet details and saw:
 
-!image.png
+<img width="1507" height="166" alt="image" src="https://github.com/user-attachments/assets/c4569e17-1ed9-4f5e-a4a4-0d6da8a2f874" />
+
 
 ```
 Ethernet
@@ -155,7 +163,8 @@ HTTP
 ping google.com
 ```
 
-!image.png
+<img width="1917" height="552" alt="image" src="https://github.com/user-attachments/assets/5b5a5c18-d73d-4c7d-96bb-c799b7bba399" />
+
 
 I used this to generate the traffic I investigated in Wireshark. (tested against google.com)
 
@@ -163,7 +172,8 @@ I used this to generate the traffic I investigated in Wireshark. (tested against
 nslookup google.com
 ```
 
-!image.png
+<img width="1917" height="552" alt="image" src="https://github.com/user-attachments/assets/28945f1a-369c-4e44-b33e-8a746a483bb3" />
+
 
 I used this to perform a DNS lookup. (tested against google.com)
 
@@ -173,7 +183,8 @@ I used this to perform a DNS lookup. (tested against google.com)
 dns
 ```
 
-!image.png
+<img width="1917" height="177" alt="image" src="https://github.com/user-attachments/assets/07cdf112-9b6f-4a64-bf84-9a7833fefa0d" />
+
 
 I used this to find DNS queries and responses. (tested against google.com)
 
@@ -181,7 +192,8 @@ I used this to find DNS queries and responses. (tested against google.com)
 icmp
 ```
 
-!image.png
+<img width="1837" height="396" alt="image" src="https://github.com/user-attachments/assets/3b14fd7d-4033-4e29-bcf4-4e4a3f8506af" />
+
 
 I used this to find the ping traffic. (tested against google.com)
 
@@ -189,7 +201,7 @@ I used this to find the ping traffic. (tested against google.com)
 arp
 ```
 
-!image.png
+<img width="1821" height="101" alt="image" src="https://github.com/user-attachments/assets/5f1b28cd-e703-4870-bcc7-f9b87141cbda" />
 
 I used this to find the ARP request and reply. (tested against google.com)
 
@@ -197,7 +209,8 @@ I used this to find the ARP request and reply. (tested against google.com)
 tcp.flags.syn==1
 ```
 
-!image.png
+<img width="1896" height="661" alt="image" src="https://github.com/user-attachments/assets/7ffb3f9a-fe8b-42e4-b881-ff2f5ca617d0" />
+
 
 I used this to find TCP SYN and SYN-ACK packets from NeverSS.
 
@@ -205,7 +218,8 @@ I used this to find TCP SYN and SYN-ACK packets from NeverSS.
 http
 ```
 
-!image.png
+<img width="1896" height="661" alt="image" src="https://github.com/user-attachments/assets/a0770f4e-89d4-4975-91ba-137de5332f58" />
+
 
 I used this to find the HTTP traffic from NeverSSL.
 
